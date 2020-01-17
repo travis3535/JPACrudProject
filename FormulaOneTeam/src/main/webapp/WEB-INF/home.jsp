@@ -4,9 +4,13 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Formula One Database</title>
 </head>
 <body>
 <h1>Hello</h1>
+<form action="getTeamId.do" method="GET">
+  Team ID: <input type="text" name="" />
+  <input type="submit" value="Show Team" />
+</form>
 </body>
 </html>
