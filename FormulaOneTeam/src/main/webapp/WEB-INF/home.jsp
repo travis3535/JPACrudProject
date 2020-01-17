@@ -8,9 +8,9 @@
 </head>
 <body>
 <h1>Hello</h1>
-<form action="getTeamId.do" method="GET">
-  Team ID: <input type="text" name="" />
-  <input type="submit" value="Show Team" />
+<form action="getTeam.do" method="GET">
+  Team ID: <input type="text" name="id" />
+  <input type="submit" value="Submit" />
 </form>
 </body>
 </html>
