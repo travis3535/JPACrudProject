@@ -20,7 +20,7 @@ class TeamTest {
 	private Team team;
 	
 	@Test
-	void test1() {
+	void testTeamName() {
 		assertEquals("Mclaren", team.getName());
 	}
 
