@@ -29,9 +29,15 @@ public class F1Controller {
 	@RequestMapping(path="getTeam.do")
 	public String showTeam(@RequestParam Integer id, Model model) {
 		Team team = null;
+		if (id == null) {
+			List<Team> teams = dao.findAll();
+			model.addAttribute("findAll", teams);
+			return "WEB-INF/home.jsp";
+		}
 		
 		team = dao.findTeamById(id);
 		model.addAttribute("team", team);
+		
 		
 		return "WEB-INF/show.jsp";
 		

@@ -13,7 +13,7 @@
 
 <form action="delete.do" method="POST">
 	<input type="hidden" value="${id}" name="id">
-  <input type="submit" value="CONFRIM DELETE" color:red />
+  <input type="submit" value="CONFRIM DELETE" style="color:red" />
 </form>
 <br><br><br>
 <form action="/" method="GET">

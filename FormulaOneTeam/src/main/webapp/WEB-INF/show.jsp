@@ -10,7 +10,7 @@
 <body>
 <h1>Formula One Team Information</h1>
 <div>
-  <h5>${team.name} (Established ${team.estYear})</h5>
+  <h3>${team.name} (Established ${team.estYear})</h3>
   <p>Driver : ${team.driver}</p><br>
   <p>Team Principle : ${team.teamPrinciple}</p><br>
   <p>Factory Location : ${team.factoryLocation}</p><br>
@@ -19,8 +19,9 @@
 </div>
 <form action="delete.do" method="GET">
 <input type="hidden" value="${team.id}" name="id">
-  <input type="submit" value="DELETE" />
+  <input type="submit" value="DELETE" style="color:red" />
   </form>
+  <br>
   <form action="modify.do" method="GET">
   <input type="hidden" value="${team.id}" name="id">
   <input type="submit" value="MODIFY" />
@@ -28,7 +29,7 @@
   <br>
   <br>
   <form action="/" method="GET">
-  <input type="submit" value="HOME" />
+  <input type="submit" value="HOME" style="width: 100px;"/>
   </form>
 </body>
 </html>

@@ -17,16 +17,17 @@
   
   
 <form action="getTeam.do" method="GET">
-  Team ID: <input type="text" name="id" />
-  <input type="submit" value="Submit" />
-  
+  Search by ID: <input type="text" name="id" />
+  <input type="submit" value="Submit" /> 
+</form>
+
+
   <c:forEach items="${findAll }" var="team">
 <p>
 	<a href="getTeam.do?id=${team.id}">${team.name} </a>	
 </p>
 
 </c:forEach>
-</form>
   
 <!-- <form action="delete.do" method="GET">
   <input type="submit" value="Delete" />

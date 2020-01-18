@@ -15,7 +15,7 @@
   Driver: <input type="text" name="driver" /><br>
   Team Principle: <input type="text" name="teamPrinciple" /><br>
   Est. Year: <input type="text" name="estYear" /><br>
-  Description: <input type="text" name="description" /><br>
+  Description: <input type="text" name="description" style="width: 300px"/><br>
   Factory Location (Country): <input type="text" name="factoryLocation" /><br>
   
   <input type="submit" value="Submit" />

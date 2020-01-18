@@ -13,7 +13,7 @@
   Driver: <input type="text" name="driver" value="${team.driver}"/><br>
   Team Principle: <input type="text" name="teamPrinciple" value="${team.teamPrinciple}" /><br>
   Est. Year: <input type="text" name="estYear" value="${team.estYear}" /><br>
-  Description: <input type="text" name="description" value="${team.description}" /><br>
+  Description: <input type="text" name="description" value="${team.description}" style="width: 300px" /><br>
   Factory Location (Country): <input type="text" name="factoryLocation" value="${team.factoryLocation}" /><br>
   <input type="hidden" value="${team.id}" name="id">
   <input type="submit" value="Submit" />
