@@ -1,5 +1,6 @@
 package com.skilldistillery.f1.entities;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -16,9 +17,12 @@ public class Team {
 	
 	private String name;
 	private String driver;
+	@Column(name="team_principle")
 	private String teamPrinciple;
+	@Column(name="est_year")
 	private String estYear;
 	private String description;
+	@Column(name="factory_location")
 	private String factoryLocation;
 	
 	

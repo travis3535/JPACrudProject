@@ -1,7 +1,6 @@
-package com.skilldistillery.f1.entities;
+package com.skilldistillery.f1;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.fail;
+import static org.junit.jupiter.api.Assertions.*;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -14,6 +13,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
+import com.skilldistillery.f1.entities.Team;
+
 class TeamTest {
 	private static EntityManagerFactory emf;
 	private EntityManager em;
@@ -22,8 +23,11 @@ class TeamTest {
 	@Test
 	void testTeam() {
 		assertEquals("Mclaren", team.getName());
-//		assertEquals("Lando Norris", team.getDriver());
-//		assertEquals("1966", team.getEstYear());
+		assertEquals("Lando Norris", team.getDriver());
+		assertEquals("1966", team.getEstYear());
+		assertEquals("Andreas Seidl", team.getTeamPrinciple());
+		assertEquals("8 World Championships", team.getDescription());
+		assertEquals("United Kingdom", team.getFactoryLocation());
 	}
 
 	@BeforeAll
