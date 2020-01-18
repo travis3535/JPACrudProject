@@ -19,11 +19,15 @@ class TeamTest {
 	private EntityManager em;
 	private Team team;
 	
+
 	@Test
 	void testTeam() {
 		assertEquals("Mclaren", team.getName());
-//		assertEquals("Lando Norris", team.getDriver());
-//		assertEquals("1966", team.getEstYear());
+		assertEquals("Lando Norris", team.getDriver());
+		assertEquals("1966", team.getEstYear());
+		assertEquals("Andreas Seidl", team.getTeamPrinciple());
+		assertEquals("8 World Championships", team.getDescription());
+		assertEquals("United Kingdom", team.getFactoryLocation());
 	}
 
 	@BeforeAll
