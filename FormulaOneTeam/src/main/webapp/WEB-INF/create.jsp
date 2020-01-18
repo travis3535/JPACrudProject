@@ -16,14 +16,17 @@
   Team Principle: <input type="text" name="teamPrinciple" /><br>
   Est. Year: <input type="text" name="estYear" /><br>
   Description: <input type="text" name="description" style="width: 300px"/><br>
-  Factory Location (Country): <input type="text" name="factoryLocation" /><br>
-  
-  <input type="submit" value="Submit" />
+  Factory Location (Country): <input type="text" name="factoryLocation" />
+  <br>
+  <br>
+  <input type="submit" value="Submit" style="color:red"/>
   </form>
   
   <br>
+  <br>
+  <br>
   <form action="/" method="GET">
-  <input type="submit" value="HOME" />
+  <input type="submit" value="HOME" style="width: 100px;"/>
   </form>
 </body>
 </html>

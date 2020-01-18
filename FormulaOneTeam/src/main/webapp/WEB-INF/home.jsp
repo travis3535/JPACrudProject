@@ -11,16 +11,16 @@
 <body>
 <h1>Formula One Team Database</h1>
 <form action="create.do" method="GET">
-  <input type="submit" value="Create New Team" />
+  <input type="submit" value="Create New Team"  style="color:blue"/>
   </form>
   <br>
   
-  
+  <br>
 <form action="getTeam.do" method="GET">
   Search by ID: <input type="text" name="id" />
   <input type="submit" value="Submit" /> 
 </form>
-
+<br>
 
   <c:forEach items="${findAll }" var="team">
 <p>
