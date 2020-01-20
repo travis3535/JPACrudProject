@@ -29,9 +29,5 @@
 
 </c:forEach>
   
-<!-- <form action="delete.do" method="GET">
-  <input type="submit" value="Delete" />
-  </form> -->
-  
 </body>
 </html>
